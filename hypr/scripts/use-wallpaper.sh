@@ -1,4 +1,4 @@
-WALLPAPER_DIR="~/.config/hypr/wallpapers/"
+WALLPAPER_DIR="$HOME/.config/hypr/wallpapers"
 
 # Проверяем, существует ли папка
 if [ ! -d "$WALLPAPER_DIR" ]; then
