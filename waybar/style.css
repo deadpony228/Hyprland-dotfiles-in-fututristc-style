@@ -1,0 +1,213 @@
+@import "colors.css";
+
+*{
+    font-family: "Iosevka Nerd Font";
+    font-weight: bold;
+    /*font-size: 13px;*/
+}
+
+window#waybar {
+    background-color: transparent;
+}
+
+window > box {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+#window {
+    background: @background-alt;
+    border: 1px solid @selection;
+    border-radius: 7px;
+    padding: 8px 8px 8px 8px;
+    margin: 4px 0;
+    color: @orange;
+}
+
+window#waybar.empty #window {
+    background: rgba(12, 12, 12, 0);
+}
+
+.modules-left {
+    padding: 3px;
+}
+
+.modules-right {
+    padding: 3px;
+}
+
+.modules-center {
+    padding: 3px;
+}
+
+#workspaces {
+    background: @background-alt;
+    border-radius: 7px;
+    padding: 4px 4px 4px 6px;
+    margin: 4px 0;
+    border: 1px solid @selection;
+}
+
+#workspaces button {
+    /* min-height: 0;
+    padding: 0 7px;
+    margin-right: 2px;
+    color: #f5e0dc;*/
+    font-size: 18px;
+    color: @blue;
+    color: @comment; 
+    background-color: transparent;
+    padding: 0px 10px;
+    margin: 3px 2px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+#workspaces button:hover {
+    background-color: @selection;
+    color: @foreground;
+}
+
+#workspaces button.urgent {
+    /*color: #f5e0dc;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;*/
+    background-color: @red;
+    color: @background;
+}
+
+#workspaces button.empty {
+    /*color: #cdd6f4;*/
+    color: @selection;
+}
+
+#workspaces button.visible {
+    color: @green;
+}
+
+#workspaces button.active {
+    background-color: @blue;
+    color: @background; /* Темный текст на светлом фоне — отличный контраст */
+    font-weight: bold;
+    box-shadow: 0 0 5px @blue;
+}
+
+@keyframes blink {
+    to {
+        color: #202020;
+        background-color: #dcf5f3;
+    }
+}
+
+#custom-launcher {
+    background: @background-alt;
+    border-radius: 7px;
+    padding: 8px 8px 8px 4px;
+    margin: 4px 0;
+    color: #89dceb;
+    border: 1px solid @selection;
+    font-size: 18px;
+
+}
+
+#custom-power {
+    background: @background-alt;
+    border: 1px solid @selection;
+    border-radius: 7px;
+    padding: 8px 12px 8px 8px;
+    margin: 4px 0;
+    color: @red;
+    font-size: 18px;
+}
+
+#cpu {
+    background: @background-alt;
+    border: 1px solid @selection;
+    border-radius: 7px;
+    padding: 8px 8px 8px 20px;
+    margin: 4px 0;
+    color: @magenta;
+    font-size: 13px;
+    /*padding: 0px 15px;
+    margin: 4px 4px;
+    border-radius: 10px;
+    border: 1px;*/
+}
+
+#memory {
+    background: @background-alt;
+    border: 1px solid @selection;
+    border-radius: 7px;
+    padding: 8px 8px 8px 20px;
+    margin: 4px 0;
+    color: #fab387;
+    font-size: 13px;
+    color: @green;
+}
+
+#wireplumber {
+    background: @background-alt;
+    border: 1px solid @selection;
+    border-radius: 7px;
+    padding: 8px 8px 8px 20px;
+    margin: 4px 0;
+    color: @purple;
+}
+
+#wireplumber.muted {
+    color: #f38ba8;
+}
+
+#clock {
+    background: @background-alt;
+    border: 1px solid @selection;
+    border-radius: 7px;
+    padding: 8px 10px 10px 10px;
+    margin: 4px 0;
+    color: @yellow;
+    font-size: 13px;
+}
+
+#network {
+    background: @background-alt;
+    border: 1px solid @selection;
+    border-radius: 7px;
+    color: @cyan;
+    padding: 8px;
+    margin: 4px 0;
+    font-size: 18px;
+}
+
+#network.disabled {
+    color: #f38ba8;
+}
+
+#tray {
+    background: @background-alt;
+    border: 1px solid @selection;
+    border-radius: 7px;
+    padding: 8px 12px 8px 12px;
+    margin: 4px 0;
+}
+
+#battery {
+    background-color: #222436;
+    color: #cdd6f4;
+    border-radius: 4px;
+    padding: 8px;
+    margin: 4px 0;
+}
+
+#backlight {
+    background: @background-alt;
+    border: 1px solid @selection;
+    border-radius: 7px;
+    padding: 8px;
+    margin: 4px 0;
+}

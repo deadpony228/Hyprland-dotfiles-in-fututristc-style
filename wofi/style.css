@@ -1,0 +1,60 @@
+@define-color bg rgba(26, 27, 38, 0.85);     /* Глубокий основной фон */
+@define-color bg-alt rgba(36, 40, 59, 0.9);  /* Поле ввода (чуть плотнее) */
+@define-color fg #c0caf5;                    /* Светлый текст */
+@define-color sel rgba(51, 70, 124, 0.9);    /* Выделение (глубокий синий) */
+@define-color cyan #7dcfff;                  /* Яркий циан (лёд) */
+@define-color blue #7aa2f7;                  /* Неоновый синий */
+@define-color purple #bb9af7;                /* Пурпурный */
+@define-color yellow #e0af68;                /* Золотистый желтый */
+
+window {
+    margin: 0px;
+    background-color: @bg;
+    border-radius: 8px;
+    font-family: "Iosevka";
+    /* Одноцветная рамка, чтобы не ломать скругление 8px */
+    border: 2px solid @purple; 
+}
+
+#input {
+    margin: 10px;
+    border: 2px solid @blue;
+    border-radius: 8px;
+    padding: 8px;
+    background-color: @bg-alt;
+    color: @fg;
+    font-family: "Iosevka";
+}
+
+#inner-box {
+    margin: 5px;
+}
+
+#entry {
+    padding: 10px;
+    margin: 2px 5px;
+    border-radius: 8px;
+    color: @fg;
+}
+
+/* СВЕТЯЩЕЕСЯ ВЫДЕЛЕНИЕ */
+#entry:selected {
+    background-color: @sel;
+    /* Мягкое неоновое свечение цветом cyan */
+    box-shadow: inset 0px 0px 12px rgba(134, 225, 252, 0.2), 
+                0px 0px 10px rgba(134, 225, 252, 0.1);
+    outline: none;
+}
+
+#entry:selected #text {
+    color: @cyan;
+    font-weight: bold;
+    /* Подсветка текста */
+    text-shadow: 0px 0px 6px rgba(134, 225, 252, 0.4);
+}
+
+/* Скрываем скроллбар, чтобы не портил вид */
+#scroll {
+    margin: 0px;
+    border: none;
+}

@@ -1,0 +1,13 @@
+@define-color background rgba(26, 27, 38, 0.85);
+@define-color background-alt rgba(36, 40, 59, 0.9);
+@define-color foreground #c0caf5;     /* Основной светлый текст */
+@define-color selection #33467c;      /* Цвет выделения (более насыщенный синий) */
+@define-color comment #565f89;        /* Цвет для подсказок и комментариев */
+@define-color red #f7768e;            /* Розово-красный акцент */
+@define-color orange #ff9e64;         /* Оранжевый "закат" */
+@define-color yellow #e0af68;         /* Тот самый песочно-желтый */
+@define-color green #9ece6a;          /* Фисташковый зеленый */
+@define-color cyan #7dcfff;           /* Яркий циан (лёд) */
+@define-color blue #7aa2f7;           /* Основной небесно-голубой */
+@define-color purple #bb9af7;         /* Пурпурный неон */
+@define-color magenta #bb9af7;        /* В Tokyo Night часто совпадает с purple */

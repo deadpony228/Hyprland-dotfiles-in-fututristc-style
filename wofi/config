@@ -1,0 +1,14 @@
+width=600
+height=300
+location=center
+show=drun
+prompt=Search Apps...
+filter_rate=100
+allow_images=true
+image_size=24
+# Убирает стандартные рамки, мы отрисуем свои в CSS
+no_actions=true
+halign=fill
+orientation=vertical
+content_halign=fill
+insensitivy=true
